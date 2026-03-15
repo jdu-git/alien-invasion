@@ -1,0 +1,27 @@
+==== Pygame Notes ====
+
+Main file
+  - can be a class
+  - init pygame, create attributes like:
+    - settings, display surface/screen, class creation
+  - run_game() loop uses helper methods
+    - check_events
+    - key_press/key_release events 
+    - update_screen
+
+==== Chapter 12 Basic Setup Summary ====
+- set background color
+  - store settings in a separate class
+- draw an image to the screen and give player control over movement
+- create elements tat move on their own, like bullet and delete objects no longer needed
+- refactor code as you go. start small
+
+
+The screen object is called a surface. Each element in the game like alien or ship, is a surface. 
+Each element on the screen is its own surface. The display.flip() rewrites onto the screen every iteration of loop.
+The background color only has to be specified once. Pygame uses a RGB color system, each color ranging from 0-255. (255, 0, 0) = red. etc.
+Each number is telling the computer to mix certain amounts of these colors
+
+Create a separate module for settings of game, to have everything in one place for changing settings. Make it a class.
+
+
